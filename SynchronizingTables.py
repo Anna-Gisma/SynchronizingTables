@@ -9,11 +9,11 @@ def SynchronizingTables(N, ids, salary):
     
     for i in range(N):
         ids_sort[i] = ids[i]
-        sal_sort[i] = salary[i] # дублируем массивы
+        sal_sort[i] = salary[i] 
     ids_sort.sort()
-    sal_sort.sort()# сортируем по возрастанию
+    sal_sort.sort()
     
-    for i in range(N):# создание массивов с индексом и значением
+    for i in range(N):
         x = []
         y = []
         x1 = []
@@ -32,12 +32,10 @@ def SynchronizingTables(N, ids, salary):
         idsNoSort.append(x1)
     
     for i in range(N):
-        k = idsNoSort[i][0]
-    #print('k',k)
+        k = idsNoSort[i][0]   
         for j in range(N):
             if k == idsS[j][0]:
-                indx = idsS[j][1]
-            #print('indx', indx)
+                indx = idsS[j][1]     
                 if indx == salS[j][1]:
                     resSal.append(salS[j][0])
     
